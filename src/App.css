@@ -24,6 +24,16 @@ body {
 }
 
 .header {
+  width: 100vw; /* Ensure the black bar spans the entire screen width */
+  background-color: var(--menu-bg-color);
+  color: var(--menu-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  margin: 0; /* Remove any potential centering margin */
+
   width: 100%;
   background-color: var(--menu-bg-color); /* Ensures black bar spans across */
   color: var(--menu-text-color);
@@ -64,6 +74,9 @@ body {
 }
 
 .nav-button:hover {
+  background-color: var(--menu-text-color); /* Reverse background to white */
+  color: var(--menu-bg-color); /* Reverse text color */
+
   background-color: var(--button-hover-bg);
   color: var(--button-hover-text);
 }
@@ -94,6 +107,9 @@ body {
 }
 
 .create-todo-button:hover {
+  background-color: var(--menu-text-color); /* Reverse background to white */
+  color: var(--menu-bg-color); /* Reverse text color */
+
   background-color: var(--button-hover-bg);
   color: var(--button-hover-text);
 }
