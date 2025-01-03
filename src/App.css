@@ -32,7 +32,6 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-right: auto; /* Push logo to far left */
 }
 
 .nav {
@@ -43,12 +42,12 @@ body {
 .nav-button {
   background-color: var(--button-bg);
   color: var(--text-color);
-  border: none; /* Remove outlines */
+  border: 2px solid var(--text-color);
   border-radius: 25px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-button:hover {
@@ -71,32 +70,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.create-todo-button {
-  background-color: var(--button-bg);
-  color: var(--text-color);
-  border: 2px solid var(--text-color);
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
-
-.create-todo-button:hover {
-  background-color: var(--button-hover-bg);
-  color: var(--button-hover-text);
-}
-
-.todo-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.todo-item {
-  background-color: var(--button-bg);
-  color: var(--text-color);
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border: 1px solid var(--text-color);
-  border-radius: 5px;
-  text-align: left;
+.description {
+  font-size: 1.2rem;
+  max-width: 600px;
 }
