@@ -7,34 +7,36 @@ function TopMenu() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '15px 30px',
-        backgroundColor: '#000',
-        color: '#fff',
-        fontFamily: 'Arial, sans-serif',
-        fontSize: '16px',
+        padding: '20px 40px',
+        backgroundColor: '#1A1A1A',
+        color: '#EDEDED',
+        fontFamily: 'Helvetica, Arial, sans-serif',
+        fontSize: '18px',
     };
     const logoStyle = {
-        fontSize: '22px',
+        fontSize: '24px',
         fontWeight: 'bold',
+        color: '#FFFFFF',
+        textDecoration: 'none',
+    };
+    const navStyle = {
+        display: 'flex',
+        gap: '20px',
     };
     const linkStyle = {
-        color: '#fff',
+        color: '#EDEDED',
         textDecoration: 'none',
-        margin: '0 15px',
-        transition: 'color 0.3s',
-    };
-    const linkHoverStyle = {
-        color: '#ddd',
+        fontSize: '18px',
+        transition: 'color 0.3s ease',
     };
     return (
         <div style={menuStyle}>
-            <div style={logoStyle}>MyApp</div>
-            <nav>
+            <Link to="/" style={logoStyle}>MyBrand</Link>
+            <nav style={navStyle}>
                 <Link to="/" style={linkStyle}>Home</Link>
                 <Link to="/about" style={linkStyle}>About</Link>
                 <Link to="/services" style={linkStyle}>Services</Link>
                 <Link to="/contact" style={linkStyle}>Contact</Link>
-                <Link to="/login" style={linkStyle}>Login</Link>
             </nav>
         </div>
     );
