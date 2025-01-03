@@ -24,6 +24,15 @@ body {
 }
 
 .header {
+  width: 100%;
+  background-color: var(--menu-bg-color); /* Ensures black bar spans across */
+  color: var(--menu-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adds some spacing */
+  flex-wrap: wrap; /* Makes it responsive for mobile */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
